@@ -29,3 +29,5 @@ isort: .venv/bin/isort # Sorts imports using isort
 
 flake8: .venv/bin/flake8 # Lints code using flake8
 	.venv/bin/flake8 *.py
+
+lint: black isort flake8
